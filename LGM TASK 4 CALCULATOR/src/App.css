@@ -1,0 +1,70 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* Background color for the whole calculator */
+  padding: 40px;
+  box-sizing: border-box;
+  border: 10px solid #000; /* Add a black border around the calculator */
+  border-radius: 20px; /* Rounded corners for the calculator */
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333; /* Heading color */
+}
+
+h2 {
+  margin: 10px 0;
+  color: #333; /* Heading color */
+}
+
+input[type="text"] {
+  width: 330px;
+  padding: 10px;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 70px;
+  height: 50px;
+  margin: 5px;
+  font-size: 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+h4 {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #333; /* Result text color */
+}
+
+/* Grid layout for buttons */
+.center {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+/* Clear button style */
+button.clear {
+  grid-column: span 2;
+  background-color: #f00;
+}
+
+button.clear:hover {
+  background-color: #f22;
+}
